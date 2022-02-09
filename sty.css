@@ -1,6 +1,7 @@
 body{
     text-align: center;
     background-image: url(pexels-victor-freitas-791763.jpg);
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
