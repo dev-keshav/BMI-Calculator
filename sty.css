@@ -31,6 +31,9 @@ p{
 .weight{
     padding-top: 30px;
 }
+#res{
+    color: blue;
+}
 #info{
     color: rgb(154, 155, 156);
     padding-top: 4%;
