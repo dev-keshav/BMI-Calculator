@@ -24,22 +24,28 @@
         <br>
         <p id="res"></p>
         <div class="result-btn">
-            <button type="button" id="res-btn" class="btn btn-outline-light" onclick="bmi()">Result</button>
+            <button type="button" id="res-btn" class="btn btn-outline-light" onclick="bmi(); audio.play(); ">Result</button>
         </div>
-        
+
         <p id="info">Note: Please enter the heigth in cm and weight in kg.</p>
     </div>
 
 
     <script>
-        function bmi(){
-            var height=document.getElementById('height').value;
-            var weight=document.getElementById('weight').value;
+        function bmi() {
+            var height = document.getElementById('height').value;
+            var weight = document.getElementById('weight').value;
 
-            var bmi = weight/(height/100*height/100);
+            var bmi = weight / (height / 100 * height / 100);
             var totalBmi = bmi.toFixed(2);
             document.getElementById('res').innerHTML = "Your BMI is " + totalBmi;
         }
+    </script>
+
+
+    <script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "./result.wav";
     </script>
 </body>
 
